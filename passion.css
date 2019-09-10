@@ -1,14 +1,12 @@
 body {
-    margin: 0;
+    width: 850px;
+    margin: auto;  
 }
 
 .header {
     display: block;
-    width: 850px;
     height: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(img/billboard.jpg);
+    background-image: url(billboard.jpg);
 }
 
 .logo {
@@ -16,7 +14,7 @@ body {
 }
 
 .logo_center {
-    height: 20%;
+    height: 110px;
     justify-content: center;
     align-items: center; 
 }
@@ -30,13 +28,16 @@ body {
 }
 
 .header__border {
-    margin: 0 15%;
+    margin-left: 15%;
+    margin-right: 15%;
     opacity: 0.3;
-    border-bottom: 1px solid gray;    
+    border-bottom: 1px solid gray;
 }
 
 .header__title {
-    margin: 8% 15% 6% 15%;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    margin-left: 15%;
     width: 50%;
     font-family: Raleway;
     color: white;
@@ -44,7 +45,7 @@ body {
 }
 
 .header__button {
-    margin: 0 0 0 15%;
+    margin-left: 15%;
     background-color: #f5a65b;
     padding: 15px 40px;
     font-family: Raleway;
