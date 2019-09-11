@@ -1,22 +1,25 @@
 body {
     width: 850px;
-    margin: auto;  
+    margin: auto;
 }
 
 .header {
     display: block;
     height: 550px;
+    padding-left: 125px;
+    padding-right: 125px;
     background-image: url(billboard.jpg);
 }
 
 .logo {
     display: flex;
+    margin: auto;
 }
 
 .logo_center {
     height: 110px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .logo__image {
@@ -27,28 +30,29 @@ body {
     
 }
 
-.header__border {
-    margin-left: 15%;
-    margin-right: 15%;
+.header__title:before {
+    display: block;
+    content: "";
+    width: 600px;
+    height: 1px;
+    margin-bottom: 70px;
+    background-color: gray;
     opacity: 0.3;
-    border-bottom: 1px solid gray;
 }
 
 .header__title {
-    margin-top: 8%;
-    margin-bottom: 6%;
-    margin-left: 15%;
-    width: 50%;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-right: 100px;
     font-family: Raleway;
     color: white;
     text-transform: uppercase;
 }
 
 .header__button {
-    margin-left: 15%;
-    background-color: #f5a65b;
     padding: 15px 40px;
-    font-family: Raleway;
     color: white;
+    background-color: #f5a65b;
     text-transform: uppercase;
+    font-family: Raleway;
 }
