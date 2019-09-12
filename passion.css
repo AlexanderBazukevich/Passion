@@ -1,19 +1,17 @@
 body {
     width: 850px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header {
     display: block;
     height: 550px;
-    padding-left: 125px;
-    padding-right: 125px;
+    padding: 0 125px;
     background-image: url(billboard.jpg);
 }
 
 .logo {
     display: flex;
-    margin: auto;
 }
 
 .logo_center {
@@ -23,11 +21,7 @@ body {
 }
 
 .logo__image {
-    
-}
-
-.logo__image_big {
-    
+    display: block;
 }
 
 .header__title:before {
@@ -41,18 +35,18 @@ body {
 }
 
 .header__title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-right: 100px;
+    margin: 0 100px 50px 0;
     font-family: Raleway;
     color: white;
     text-transform: uppercase;
 }
 
 .header__button {
+    cursor: pointer;
     padding: 15px 40px;
     color: white;
     background-color: #f5a65b;
     text-transform: uppercase;
+    text-decoration: none;
     font-family: Raleway;
 }
