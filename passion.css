@@ -8,7 +8,6 @@ body {
     height: 550px;
     padding: 0 125px;
     background-image: url(billboard.jpg);
-    opacity: 0.2;
 }
 
 .logo {
@@ -46,18 +45,18 @@ body {
     font-size: 34px;
     letter-spacing: .05em;
     font-weight: bold;
-    line-height: 44px;
+    line-height: 1.3;
 }
 
 .header__button {
     display: inline-block;
     cursor: pointer;
-    padding: 17px 43px;
+    padding: 17px 42px;
     color: white;
     background-color: #f5a65b;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: .07em;
     font-size: 18px;
     font-family: Raleway;
 }
