@@ -18,16 +18,6 @@ body {
     height: 110px;
 }
 
-.logo {
-    display: inline-block;
-    font-size: 0;
-}
-
-.logo__image {
-    display: block;
-    margin-bottom: 3px;
-}
-
 .header__title {
     margin: 0 100px 30px -2px;
     padding: 0;
@@ -62,15 +52,29 @@ body {
     background-color: #f5a65b;
 }
 
-.content-section {
+.logo {
+    display: inline-block;
+    font-size: 0;
+}
+
+.logo__image {
     display: block;
+    margin-bottom: 3px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0 125px 83px 125px;
     background-color: #fbfbfb;
 }
 
-.content-section__title {
+.content__title {
+    position: relative;
     margin: 0;
-    padding: 96px 0 16px 2px;
+    padding: 96px 0 36px 0;
+    width: 600px;
     text-align: center;
     color: #414d60;
     font-weight: bold;
@@ -79,55 +83,64 @@ body {
     text-transform: uppercase;
 }
 
-.content-section__border {
+.content__title:before {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 50%;
     height: 20px;
-    width: 300px;
-    border-right: 1px solid #e9e9e9;
+    width: 1px;
+    background-color: #e9e9e9;
 }
 
-.article-section {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 40px;
-    border-top: 1px solid #e9e9e9;
+.content__title:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -1px;
+    height: 1px;
+    width: 600px;
+    background-color: #e9e9e9;
 }
 
-.article {
+.section {
     display: block;
     width: 173px;
     text-align: center;
 }
 
-.article__image {
+.section__image {
+    margin-top: 41px;
     display: inline-block;
 }
 
-.article__image_circle {
+.section__image_circle {
     height: 140px;
     width: 140px;
     border-radius: 100%;
 }
 
-.article__image_icon_sun {
+.section__image_icon_sun {
     background-image: url(icon1.png);
 }
 
-.article__image_icon_target {
+.section__image_icon_target {
     background-image: url(icon2.png);
 }
 
-.article__image_icon_time {
+.section__image_icon_time {
     background-image: url(icon3.png);
 }
 
-.article__title {
+.section__title {
     color: #495d79;
     font-size: 17px;
     letter-spacing: .02em;
     text-transform: uppercase;
 }
 
-.article__content {
+.section__content {
     margin-top: 31px;
     color: #7188a8;
     font-size: 14px;
