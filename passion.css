@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     width: 850px;
     font-family: Raleway;
+    background-color: #fbfbfb;
 }
 
 .header {
@@ -33,7 +34,7 @@ body {
     display: block;
     height: 1px;
     width: 600px;
-    margin: 0 0 67px 2px;
+    margin: 0 0 68px 2px;
     content: "";
     background-color: gray;
     opacity: 0.3;
@@ -67,13 +68,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 125px 82px 125px;
-    background-color: #fbfbfb;
 }
 
 .content__title {
     position: relative;
     margin: 0; 
-    padding: 96px 0 36px 2px;
+    padding: 95px 0 37px 2px;
     width: 100%;
     text-align: center;
     color: #414d60;
@@ -85,10 +85,10 @@ body {
 
 .content__title:before,
 .content__title:after {
-    position: absolute;    
+    position: absolute;
     bottom: 0;
     display: block;
-    content: "";    
+    content: "";
     background-color: #e9e9e9;
 }
 
@@ -104,7 +104,9 @@ body {
 }
 
 .section {
-    display: block;
+}
+
+.section_short {
     width: 173px;
 }
 
@@ -112,14 +114,10 @@ body {
     text-align: center;
 }
 
-.section__image {
-    display: inline-block;
-}
-
-.section__image_circle {
+.section__icon {
     height: 105px;
     width: 105px;
-    margin: 59px 0 17px 0;
+    margin: 57px auto 33px auto;
     border-radius: 100%;
     background-color: #fdfdfd;
     background-position: center;
@@ -127,23 +125,24 @@ body {
     box-shadow: 0 5px 10px #eae7e7;
 }
 
-.section__image_square {    
-    margin: 40px 0 22px 0;
-}
-
-.section__image_icon_sun {
+.section__icon_sun {
     background-image: url(sun.png);
 }
 
-.section__image_icon_target {
+.section__icon_target {
     background-image: url(target.png);
 }
 
-.section__image_icon_time {
+.section__icon_time {
     background-image: url(clock.png);
 }
 
+.section__image {
+    margin: 40px 0 22px 0;
+}
+
 .section__title {
+    margin: 0;
     color: #495d79;
     font-size: 17px;
     letter-spacing: .02em;
@@ -155,15 +154,15 @@ body {
 }
 
 .section__fragment {
-    margin-top: 32px;
+    margin: 33px 0 0 0;
     color: #7188a8;
     font-size: 14px;
     letter-spacing: 0.05em;
     line-height: 1.7;
 }
 
-.section__fragment_left {    
-    margin: 14px 0 0 -1px;
+.section__fragment_left {
+    margin: 15px 0 0 -1px;
 }
 
 .section__title_left,
@@ -173,5 +172,6 @@ body {
 }
 
 .section__author {
-    height: 149px;
+    margin: 0;
+    height: 289px;
 }
