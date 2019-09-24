@@ -1,15 +1,8 @@
-.g{
-    background-image: url(passion.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-}
-
 body {
     margin: 0 auto;
     width: 850px;
     font-family: Raleway;
     background-color: #fbfbfb;
-    opacity: 0.3;
 }
 
 .header {
@@ -285,16 +278,18 @@ body {
 
 .sitemap {
     display: flex;
-    justify-content: space-between;
-    width: 198px;
 }
 
 .sitemap__link {
-    margin-top: 4px;
+    margin: 4px 0 0 34px;
     color: #414d60;
     font-size: 14px;
     letter-spacing: .05em;
     text-decoration: none;
+}
+
+.sitemap__link:first-child {
+    margin-left: 0;
 }
 
 .copyright {
@@ -312,15 +307,18 @@ body {
 
 .social {
     display: flex;
-    justify-content: space-between;
-    width: 120px;
 }
 
 .social__link {
+    margin-left: 22px;
     height: 15px;
     width: 15px;
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
+}
+
+.social__link:first-child {
+    margin-left: 0;
 }
 
 .social__link_facebook {
