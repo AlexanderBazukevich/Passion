@@ -156,19 +156,22 @@ body {
 
 .cover {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 96px;
     background-color: #f5f5f5;
 }
 
 .cover__image {
-    font-size: 0;
+    max-width: 50%;
 }
 
-.cover__quote {
+.quote {
+    padding: 58px 60px 0 60px;
+}
+
+.quote__text {
     position: relative;
-    width: 300px;
-    margin: 57px 0 101px 60px;
+    margin: 0 0 26px 0;
+    padding-bottom: 22px;
     color: #667386;
     font-size: 20px;
     font-weight: 500;
@@ -178,29 +181,27 @@ body {
     text-transform: uppercase;
 }
 
-.cover__quote:before,
-.cover__quote:after {
+.quote__text:before,
+.quote__text:after {
     content: "";
     position: absolute;
     left: 2px;
 }
 
-.cover__quote:before {
+.quote__text:before {
     height: 17px;
     width: 19px;
     background-image: url(quote.png);
 }
 
-.cover__quote:after {
+.quote__text:after {
     bottom: 0;
     height: 1px;
     width: 40px;
     background-color: #d3d1d1;
 }
 
-.cover__author {
-    margin: -74px 0 0 auto;
-    padding-right: 290px;
+.quote__author {
     color: #7188a8;
     letter-spacing: 0.04em;
 }
