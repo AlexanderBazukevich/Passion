@@ -155,22 +155,15 @@ body {
 
 .cover {
     margin-top: 98px;
+    font-size: 0;
     background-color: #f5f5f5;
 }
-
-.cover__image {
-    max-width: 50%;
-}
-
 .cover__image,
 .cover__quote {
     display: inline-block;
     vertical-align: top;
+    max-width: 50%;
     width: 100%;
-}
-
-.cover__quote {
-    max-width: 49%;
 }
 
 .quote__text {
@@ -209,6 +202,7 @@ body {
 .quote__author {
     margin-left: 56px;
     color: #7188a8;
+    font-size: 16px;
     letter-spacing: 0.04em;
 }
 
