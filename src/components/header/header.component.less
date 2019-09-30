@@ -1,0 +1,49 @@
+.header {
+    display: block;
+    height: 550px;
+    padding: 0 125px;
+    background-image: url(../assets/interface/billboard.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 110px;
+    }
+
+    &__title {
+        margin: 0 0 30px -2px;
+        padding: 0;
+        color: white;
+        font-size: 34px;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        line-height: 1.29;
+        text-transform: uppercase;
+
+        &:before {
+            content: "";
+            display: block;
+            height: 1px;
+            margin: 0 0 68px 2px;
+            background-color: gray;
+            opacity: 0.3;
+        }
+    }
+
+    &__button {
+        display: inline-block;
+        cursor: pointer;
+        padding: 17px 42px;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.07em;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #f5a65b;
+    }
+}
