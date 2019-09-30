@@ -4,7 +4,7 @@
   "description": "Front-end projects",
   "main": "index.js",
   "scripts": {
-    "build": "lessc styles.less src/styles.css"
+    "build": "lessc src/styles.less dist/styles.css"
   },
   "repository": {
     "type": "git",

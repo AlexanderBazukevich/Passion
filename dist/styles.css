@@ -1,12 +1,16 @@
 body {
   margin: 0 auto;
-  width: 850px;
   font-family: Raleway;
   background-color: #fbfbfb;
 }
 @media (max-width: 850px) {
   body {
     width: auto;
+  }
+}
+@media (min-width: 851px) {
+  body {
+    width: 850px;
   }
 }
 .header {
