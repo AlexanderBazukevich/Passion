@@ -1,0 +1,41 @@
+.quote {
+    &__text {
+        position: relative;
+        margin: 58px 56px 28px 56px;
+        padding-bottom: 22px;
+        color: #667386;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        line-height: 1.7;
+        text-indent: 35px;
+        text-transform: uppercase;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            left: 2px;
+        }
+
+        &:before {
+            height: 17px;
+            width: 19px;
+            background-image: url(../assets/interface/quote.png);
+        }
+
+        &:after {
+            bottom: 0;
+            height: 1px;
+            width: 40px;
+            background-color: #d3d1d1;
+        }
+    }
+
+    &__author {
+        margin-left: 56px;
+        color: #7188a8;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+    }
+}

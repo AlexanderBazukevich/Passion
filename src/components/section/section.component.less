@@ -1,0 +1,44 @@
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 125px;
+
+    @media (max-width: 786px) {
+        justify-content: space-around;
+    }
+
+    &__title {
+        position: relative;
+        margin: 0; 
+        padding: 97px 0 35px 2px;
+        width: 100%;
+        color: #414d60;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: .07em;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            display: block;
+            background-color: #e9e9e9;
+        }
+
+        &:before {
+            left: 50%;
+            height: 20px;
+            width: 1px;
+        }
+
+        &:after {
+            height: 1px;
+            width: 100%;
+        }
+    }
+}
+

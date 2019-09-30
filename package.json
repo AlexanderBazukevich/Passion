@@ -1,0 +1,27 @@
+{
+  "name": "web-develop",
+  "version": "1.0.0",
+  "description": "Front-end projects",
+  "main": "index.js",
+  "scripts": {
+    "build": "lessc src/styles.less dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderBazukevich/Passion.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "less"
+  ],
+  "author": "Alexander Bazukevich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexanderBazukevich/Passion/issues"
+  },
+  "homepage": "https://github.com/AlexanderBazukevich/Passion#readme",
+  "devDependencies": {
+    "less": "^3.10.3"
+  }
+}
